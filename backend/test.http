@@ -2,77 +2,15 @@
 # Content-Type: application/json
 
 # {
-#   "name": "Jat",
-#    "email": "jat@gmail.com",
-#   "password": "Test123"
+#   "name": "Test",
+#   "email": "test@gmail.com",
+#   "password": "123456"
 # }
 
-# POST http://localhost:5000/api/users/login
-# Content-Type: application/json
-
-# {
-#   "email": "jat@gmail.com",
-#   "password": "Test123"
-# }
-
-# POST http://localhost:5000/api/expenses
-# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OWNjNGJmOGViMGU5N2I3ZmNhMWNkYSIsImlhdCI6MTc3MTg4MTY5NiwiZXhwIjoxNzcxOTY4MDk2fQ.VD16oKpXc2NIafJOh3306FqtMWntUG7FmIvaov_Sbdg
-# Content-Type: application/json
-
-# {
-#   "title": "Food",
-#   "amount": 1000,
-#   "category": "Dining",
-#   "note" : "Luch"
-# }
-
-POST http://localhost:5000/api/transactions
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OWNjNGJmOGViMGU5N2I3ZmNhMWNkYSIsImlhdCI6MTc3MTg4MTY5NiwiZXhwIjoxNzcxOTY4MDk2fQ.VD16oKpXc2NIafJOh3306FqtMWntUG7FmIvaov_Sbdg
+POST http://localhost:5000/api/users/login
 Content-Type: application/json
 
 {
-  "type": "income",
-  "amount": 10000,
-  "category": "salary",
-  "note" : "office"
+  "email": "test@gmail.com",
+  "password": "123456"
 }
-
-#POST http://localhost:5000/api/transactions
-#Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OWNjNGJmOGViMGU5N2I3ZmNhMWNkYSIsImlhdCI6MTc3MTg4MTY5NiwiZXhwIjoxNzcxOTY4MDk2fQ.VD16oKpXc2NIafJOh3306FqtMWntUG7FmIvaov_Sbdg
-#Content-Type: application/json
-
-# {
-#   "type": "expense",
-#   "amount": 500,
-#   "category": "Dining",
-#   "note" : "Luch"
-# }
-
-# GET http://localhost:5000/api/dashboard
-# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OWNjNGJmOGViMGU5N2I3ZmNhMWNkYSIsImlhdCI6MTc3MTg4MTY5NiwiZXhwIjoxNzcxOTY4MDk2fQ.VD16oKpXc2NIafJOh3306FqtMWntUG7FmIvaov_Sbdg
-# Content-Type: application/json
-
-# GET http://localhost:5000/api/transactions?sortBy=amount&order=asc
-# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OWFiOWIxYjE5OWE1OWQ0ZmFhZDYyYyIsImlhdCI6MTc3MTc4MjU1OCwiZXhwIjoxNzcxODY4OTU4fQ.dit5EMtpBCkAu96AGPmayqPrLoC4jb8JVSdcDkEDsCg
-
-# PUT http://localhost:5000/api/transactions/699b4389bbc1fdb04bf9bdee
-# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OWFiOWIxYjE5OWE1OWQ0ZmFhZDYyYyIsImlhdCI6MTc3MTc4MjU1OCwiZXhwIjoxNzcxODY4OTU4fQ.dit5EMtpBCkAu96AGPmayqPrLoC4jb8JVSdcDkEDsCg
-# Content-Type: application/json
-
-# {
-#   "amount": 800,
-#   "note": "Dinner"
-# }
-# DELETE http://localhost:5000/api/transactions/699b4389bbc1fdb04bf9bdee
-# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OWFiOWIxYjE5OWE1OWQ0ZmFhZDYyYyIsImlhdCI6MTc3MTc4MjU1OCwiZXhwIjoxNzcxODY4OTU4fQ.dit5EMtpBCkAu96AGPmayqPrLoC4jb8JVSdcDkEDsCg
-
-
-
-
-# GET http://localhost:5000/api/expenses
-# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OWFiOWIxYjE5OWE1OWQ0ZmFhZDYyYyIsImlhdCI6MTc3MTc0Nzc3NiwiZXhwIjoxNzcxODM0MTc2fQ.a2ci4U0D7i7CpDHDelE1v8GTOQ70BcJ3J5cNZnqjPWk
-
-
-
-# GET http://localhost:5000/api/dashboard
-# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OWFiOWIxYjE5OWE1OWQ0ZmFhZDYyYyIsImlhdCI6MTc3MTc0Nzc3NiwiZXhwIjoxNzcxODM0MTc2fQ.a2ci4U0D7i7CpDHDelE1v8GTOQ70BcJ3J5cNZnqjPWk
