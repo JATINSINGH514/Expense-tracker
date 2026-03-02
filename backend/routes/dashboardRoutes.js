@@ -24,14 +24,14 @@ router.get("/", verifyToken, async (req, res) => {
     ]);
 
     const monthlyData = await Transaction.aggregate([
-  { $match: { userId: new mongoose.Types.ObjectId(userId) } },
+  { $match: { userId: new mongoose.Types.ObjectId(userId), type: "expense" } },
   {
     $group: {
       _id: {
         month: {
           $month: {
             date: "$date",
-            timezone: "Asia/Kolkata"   // ✅ FIX
+            timezone: "Asia/Kolkata" 
           }
         }
       },
