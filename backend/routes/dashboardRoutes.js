@@ -73,7 +73,7 @@ router.get("/", verifyToken, async (req, res) => {
       balance: income - expense,
       monthlyData,
       budget: budgetAmount,
-      exceeded: monthlyExpense > budgetAmount
+      exceeded:  budgetAmount>0 && monthlyExpense > budgetAmount
     });
 
   } catch (error) {
